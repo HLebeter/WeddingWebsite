@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat for our Guestbook</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="chatbot/style.css">
+</head>
+<body>
+    <header>
+        <h1>Chat with Us!</h1>
+        <p>Have a chat with our helpbot to help us create a guestbook!</p>
+    </header>
+
+    <main>
+        <!-- Chatbot interface -->
+        <section class="chatbot">
+            <div id="chatbox-overlay" class="chatbox-overlay">
+                <div class="chatbox-container">
+                    <div class="chat-box" id="chat-box"></div>
+                    <input type="text" id="user-input" placeholder="Ask me anything..." />
+                    <button id="send-btn">Send</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p><a href="index.html">Back to Home</a></p>
+    </footer>
+
+    <script src="chatbot/script.js"></script>
+</body>
+</html>
