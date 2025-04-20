@@ -75,3 +75,21 @@ footer {
   font-size: 0.9rem;
   color: #aaa;
 }
+
+.about {
+  padding: 2rem;
+  max-width: 800px;  /* Optional: adjust max-width to your preference */
+  margin: 0 auto;  /* This centers the section horizontally */
+  text-align: center; /* Centers the text */
+}
+
+.about h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.about p, .about h3 {
+  font-size: 1.2rem; /* Adjust font size for better readability */
+  line-height: 1.6; /* Optional: line height for better spacing between lines */
+}
