@@ -25,9 +25,14 @@ header .date {
 
 .hero img {
   display: block;
-  width: 100%;
-  max-height: 500px;
+  margin: 2rem auto;
+  width: 300px;
+  height: 400px;
   object-fit: cover;
+  border-radius: 50% / 40%;
+  border: 8px solid #fff;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+  background-color: #fff;
 }
 
 .details {
