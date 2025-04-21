@@ -166,3 +166,26 @@ footer {
 #chatbot-btn:hover {
   background-color: #5a3163;
 }
+
+/* Navigation Links inside Header */
+.nav-links {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.nav-links a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #6c3d7e;
+  background-color: #f9f0fb;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.nav-links a:hover {
+  background-color: #e5d0ec;
+}
