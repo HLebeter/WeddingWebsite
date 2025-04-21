@@ -98,7 +98,7 @@ footer {
 
 /* Chatbot Styles */
 .chatbox-overlay {
-  display: none; /* Initially hidden */
+  display: flex;
   position: fixed;
   top: 0;
   left: 0;
