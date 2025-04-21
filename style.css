@@ -193,14 +193,16 @@ footer {
 .video {
   text-align: center;
   padding: 2rem;
+  background-color: #f9f9f9;
 }
 
 .video-container {
   position: relative;
-  padding-bottom: 56.25%; /* 16:9 ratio */
+  padding-bottom: 56.25%; /* 16:9 aspect ratio */
   height: 0;
   overflow: hidden;
-  max-width: 100%;
+  max-width: 800px;
+  margin: 0 auto; /* centers the container */
 }
 
 .video-container iframe {
@@ -209,5 +211,5 @@ footer {
   left: 0;
   width: 100%;
   height: 100%;
-  border-radius: 10px;
+  border: none;
 }
