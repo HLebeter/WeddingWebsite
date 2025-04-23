@@ -15,7 +15,7 @@ async function sendMessage() {
   const userText = input.value.trim();
   if (!userText) return;
 
-  appendMessage("Guest", userText);
+  appendMessage("You", userText);
   messages.push({ role: "user", content: userText });
   input.value = "";
 
