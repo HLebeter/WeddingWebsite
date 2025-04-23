@@ -24,6 +24,8 @@ async function sendMessage() {
     messages: messages
   };
 
+  console.log("Sending to API:", JSON.stringify(payload, null, 2));
+
   try {
     const response = await fetch(apiURL, {
       method: "POST",
