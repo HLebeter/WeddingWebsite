@@ -30,8 +30,7 @@ async function sendMessage() {
       headers: {
         "Content-Type": "application/json"
       },
-      body: JSON.stringify(payload),
-      mode: "no-cors"
+      body: JSON.stringify(payload)
     });
 
     const data = await response.json();
