@@ -113,17 +113,21 @@ footer {
 .chatbox-container {
   background-color: white;
   border-radius: 8px;
-  width: 400px;
-  max-width: 90%;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
   padding: 20px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
 }
 
 #chat-box {
-  height: 300px;
+  height: 400px;
   overflow-y: auto;
-  border-bottom: 2px solid #eee;
-  margin-bottom: 10px;
+  border: 2px solid #eee;
+  border-radius: 5px;
+  padding: 10px;
+  background-color: #fafafa;
+  margin-bottom: 15px;
 }
 
 #user-input {
