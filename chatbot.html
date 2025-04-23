@@ -1,18 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Wedding Guestbook Chatbot</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="icon" href="Photos/Harry and Merlin - SG.png" type="image/png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Open+Sans&display=swap" rel="stylesheet">
 </head>
 <body>
-  <div class="chat-container">
-    <div id="chat-box"></div>
-    <div class="input-area">
+  <header>
+    <h1>Harry & Merlin</h1>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="photos.html">Upload your best photos</a>
+      <a href="chatbot.html">Guestbook Chat</a>
+    </nav>
+  </header>
+
+  <section class="about">
+    <h2>Say Something to the Couple</h2>
+    <p>Leave a message, a story, or a heartfelt note for us to remember forever.</p>
+
+    <div class="chatbox-container">
+      <div id="chat-box"></div>
       <input type="text" id="user-input" placeholder="Type your message..." />
-      <button onclick="sendMessage()">Send</button>
+      <button id="send-btn" onclick="sendMessage()">Send</button>
     </div>
-  </div>
+  </section>
+
+  <footer>
+    <p>Made with love by Harry & Merlin</p>
+  </footer>
 
   <script src="script.js"></script>
 </body>
