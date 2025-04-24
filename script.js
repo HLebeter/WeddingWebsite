@@ -17,6 +17,7 @@ async function sendMessage() {
   if (!userText) return;
 
   appendMessage("You", userText);
+  messages.push({ role: "user", content: userText });
   input.value = "";
 
   const payload = {
