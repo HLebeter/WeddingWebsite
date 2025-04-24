@@ -1,5 +1,6 @@
 const apiURL = "https://4n8jwaou64.execute-api.eu-west-2.amazonaws.com/default/Wedding_ChatBot";
 let messages = [];
+const sessionId = crypto.randomUUID();
 
 function appendMessage(sender, text) {
   const chatBox = document.getElementById("chat-box");
@@ -20,6 +21,7 @@ async function sendMessage() {
   input.value = "";
 
   const payload = {
+    session_id: sessionId,
     user_input: userText,
     messages: messages
   };
