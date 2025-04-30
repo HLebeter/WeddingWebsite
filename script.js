@@ -51,3 +51,14 @@ async function sendMessage() {
     appendMessage("Bot", "Error contacting server.");
   }
 }
+
+document.addEventListener('DOMContentLoaded', () => {
+  const input = document.getElementById('user-input');
+
+  input.addEventListener('keydown', function (event) {
+    if (event.key === 'Enter') {
+      event.preventDefault(); // Prevent newline
+      sendMessage();
+    }
+  });
+});
