@@ -130,8 +130,13 @@ footer {
   margin-bottom: 15px;
 }
 
-#user-input {
+#user-input,
+#send-btn {
   width: 100%;
+  box-sizing: border-box; /* ✅ This fixes the alignment issue */
+}
+
+#user-input {
   padding: 10px;
   margin-top: 10px;
   border: 1px solid #ccc;
@@ -139,9 +144,8 @@ footer {
 }
 
 #send-btn {
-  width: 100%;
   padding: 10px;
-  background-color: #6c3d7e; /* Use your theme color */
+  background-color: #6c3d7e;
   color: white;
   border: none;
   border-radius: 5px;
