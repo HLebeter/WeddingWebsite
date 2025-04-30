@@ -38,13 +38,15 @@ async function sendMessage() {
 
     const data = await response.json();
 
+    console.log("Response from API:", data);
+
     if (response.ok) {
       const reply = data.reply;
       appendMessage("Bot", reply);
       messages = data.messages;  // Preserve the full chat history
     } else {
       appendMessage("Bot", "Oops, something went wrong.");
-      console.error(data);
+      console.error("API returned an error:", data);
     }
   } catch (err) {
     console.error("Error calling API:", err);
