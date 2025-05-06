@@ -232,6 +232,7 @@ footer {
 .gallery {
   padding: 2rem;
   background-color: #f9f9f9;
+  text-align: center;
 }
 
 .gallery-grid {
@@ -240,12 +241,14 @@ footer {
   gap: 1rem;
   max-width: 1200px;
   margin: 0 auto;
+  padding: 1rem;
 }
 
 .gallery-grid img {
   width: 100%;
   height: auto;
+  max-height: 300px; /* ✅ controls max vertical size */
+  object-fit: cover;
   border-radius: 8px;
   box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-  object-fit: cover;
 }
