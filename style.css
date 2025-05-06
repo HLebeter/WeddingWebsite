@@ -221,3 +221,8 @@ footer {
   height: 100%;
   border: none;
 }
+
+.instagram-wrapper {
+  display: flex;
+  justify-content: center;
+}
